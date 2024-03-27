@@ -2,9 +2,10 @@
 
 ### Description 
 
-SpyGuard is a forked and enhanced version of [TinyCheck](https://github.com/KasperskyLab/TinyCheck), developed by the same author when he was working at Kaspersky. SpyGuard's main objective is to detect signs of compromise by monitoring network flows transmitted by a device. 
+CyberGuard is a forked and enhanced version of [TinyCheck]
+CyberGuard's main objective is to detect signs of compromise by monitoring network flows transmitted by a device. 
 
-As it uses WiFi, SpyGuard can be used against a wide range of devices, such as smartphones, laptops, IOTs or workstations. To do its job, the analysis engine of SpyGuard is using Indicators of Compromise (IOCs), anomaly detection and is supported by [Suricata](https://suricata.io).
+As it uses WiFi, CyberGuard can be used against a wide range of devices, such as smartphones, laptops, IOTs or workstations. To do its job, the analysis engine of CyberGuard is using Indicators of Compromise (IOCs), anomaly detection and is supported by [Suricata](https://suricata.io).
 
 ### Examples of use cases
 
@@ -12,22 +13,19 @@ As it uses WiFi, SpyGuard can be used against a wide range of devices, such as s
 |:--------:|:-------------:|:-----:|:-----:|:-----:|
 | As a journalist, I need to test my smartphone's against spyware before or during engagements with confidential informants. |  Working for a public institution, I aim to set up a self-service station where individuals can check their smartphones for spyware. | After traveling overseas, I'm looking to check my phone and laptop quickly. | I seek to examine the smartphones of women upon their arrival for any stalkerware. | I aim to check the communications of a smartphone in response to a complaint, as a preliminary step before proceeding with a full forensic analysis. |
 
-**Note:** *SpyGuard is not a forensic tool*. Therefore, it might miss malware that does not communicate during the analysis. [Please refer to the FAQ for more information](https://github.com/SpyGuard/SpyGuard/wiki/Frequently-Asked-Questions#1-spyguard-hasnt-detected-anything-malicious-im-safe).
+**Note:** *CyberGuard is not a forensic tool*. Therefore, it might miss malware that does not communicate during the analysis. [Please refer to the FAQ for more information](https://github.com/SpyGuard/SpyGuard/wiki/Frequently-Asked-Questions#1-spyguard-hasnt-detected-anything-malicious-im-safe).
 
 ### Installation
 
 You need a debian-like operating system to install it easly by using the provided bash script. Once you've cloned the repository, just launch `install.sh` as root. Here are the command lines to do that:
 
 ```
-cd /tmp/ && git clone https://github.com/SpyGuard/spyguard
-cd spyguard && sudo bash install.sh
+
+cd CyberGuard && sudo bash install.sh
 ```
 
-Once installed, you can go to the backend interface located at `https://localhost:8443` to manage the device and setup the right network interfaces to get it working. Please look at the [dedicated wiki page](https://github.com/SpyGuard/spyguard/wiki/Installing-SpyGuard) to get some tips regarding it.
+Once installed, you can go to the backend interface located at `https://localhost:8443` to manage the device and setup the right network interfaces to get it working. 
 
-> [!WARNING]
-> Please check prior the installation that your Linux distribution is using `nmcli` to manage networks. If you want to install it on a Raspberry Pi
-> you need to activate it via the `raspi-config` interface prior Spyguard installation ([See here](https://github.com/SpyGuard/spyguard/wiki/Installing-SpyGuard#common-issues)).
 
 The frontend is available at the URL `https://localhost:8000`.
 
@@ -47,7 +45,7 @@ The indicators of compromise (IOCs) linked to stalkerware are now fully managed 
 
 ### Commercial use
 
-You can use SpyGuard in a commercial product. However, you can't use SpyGuard as the name of your product and you’re still required to follow the terms and conditions that the Apache License imposes, like refering to the SpyGuard project in customer documentation. Moreover, a sweet note to explain your use to the author is always appreciated, please see the contact below. You liked SpyGuard? Do not hesistate to make a donation!
+You can use CyberGuard in a commercial product. However, you can't use CyberGuard as the name of your product and you’re still required to follow the terms and conditions that the Apache License imposes, like refering to the CyberGuard project in customer documentation. Moreover, a sweet note to explain your use to the author is always appreciated, please see the contact below. You liked SpyGuard? Do not hesistate to make a donation!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=V77EASZEVTXKL"><img src="https://raw.githubusercontent.com/aha999/DonateButtons/master/Paypal.png" width="150" /></a>
 
@@ -66,7 +64,7 @@ If you need an express help to understand the results of the analysis or have a 
 
 ##
 
-To work, Spyguard is using a lot of awesome opensource projects, libraries, and fonts, kudos to them:
+To work, CyberGuard is using a lot of awesome opensource projects, libraries, and fonts, kudos to them:
 
 [Dumpcap](https://tshark.dev/capture/dumpcap/), 
 [Dig](https://github.com/tigeli/bind-utils), 
